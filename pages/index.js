@@ -1,15 +1,20 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Button from "./components/Button";
+import Spacer from "./components/Spacer";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-dark-100 page-home">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Anyteam Design</title>
+        <link rel="icon" href="/logo-white.svg" />
       </Head>
-      <main className="pl-2">
-        <button type="button">Button</button>
+      <main className="p-10">
+        <div className="flex">
+          <Button color="primary">Follow</Button>
+          <Spacer space={10} />
+          <Button color="gray">Follow</Button>
+        </div>
       </main>
     </div>
   );
